@@ -4,6 +4,8 @@ set BIN_LOCATION=%APP_DIR%/kaleido.cmd
 
 mkdir %APP_DIR%
 xcopy * %APP_DIR% /E/H
+rmdir %APP_DIR%\etc\mathjax
+
 if errorlevel 1 exit 1
 
 (

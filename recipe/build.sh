@@ -12,6 +12,7 @@ cp -r ./* $APP_DIR
 # Clean up conda build files
 rm -rf $APP_DIR/build_env_setup.sh
 rm -rf $APP_DIR/conda_build.sh
+rm -rf $APP_DIR/etc/mathjax/
 
 # Write launch script and make executable
 cat <<EOF >$LAUNCH_SCRIPT
